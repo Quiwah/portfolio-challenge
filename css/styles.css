@@ -407,8 +407,21 @@ nav {
 /* Back to the top arrow */
 #arrow {
     position: fixed;
-    bottom: 20px;
-    right: 10px;
+    bottom: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    border: 0;
+    color: #b28187;
+    z-index: 100;
+}
+
+#arrow:hover {
+    background: #d9a7c7;
 }
 
 /*
