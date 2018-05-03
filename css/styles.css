@@ -58,6 +58,21 @@ section {
     padding: 1em 10vw;
 }
 
+#about {
+    margin-top: 20%;
+}
+
+/* About and Menu for iPhone X */
+@media screen and (min-height: 650px) and (max-width: 400px) {
+    h1 {
+        padding-top: 5vh;
+        font-size: 4em;
+    }
+    nav {
+        margin-top: 10vh !important;
+    }
+}
+
 #about img {
     margin-bottom: 2em;
     opacity: 0.9;
@@ -239,11 +254,10 @@ footer {
 
 /* Menu */
 nav {
-    padding: 0.5em;
     font-size: 1.5em;
     line-height: 3em;
     height: 60%;
-    margin-top: 20%;
+    margin-top: 10%;
     max-width: 100%;
     max-height: 100%;
 }
@@ -264,7 +278,6 @@ nav {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     padding-top: 5%;
-
 }
 
 #menu li:hover {
@@ -282,7 +295,7 @@ nav {
 
 /* Menu - About */
 .menu-items:nth-child(1) {
-    margin-left: 10%;
+    margin-left: 5%;
     -webkit-align-self:flex-start;
     -moz-align-self:flex-start;
     -ms-align-self:flex-start;
@@ -293,7 +306,7 @@ nav {
 /* Menu - Works */
 .menu-items:nth-child(2) {
     margin-right: 5%;
-    margin-top: -50px;
+    margin-top: -60px;
     -webkit-align-self:flex-end;
     -moz-align-self:flex-end;
     -ms-align-self:flex-end;
@@ -314,7 +327,6 @@ nav {
 /* Menu - Contact */
 .menu-items:nth-child(4) {
     margin-left: 3%;
-    margin-top: -30px;
     -webkit-align-self:baseline;
     -moz-align-self:baseline;
     -ms-align-self:baseline;
@@ -334,13 +346,38 @@ nav {
 
 /* Menu - Links */
 .menu-items:nth-child(6) {
-    margin-left: 70%;
-    margin-top: -20%;
+    margin-left: 65%;
     -webkit-align-self:baseline;
     -moz-align-self:baseline;
     -ms-align-self:baseline;
     align-self:baseline;
     animation: float 15s infinite;
+}
+
+/* Menu for small screens */
+@media screen and (max-width: 399px) {
+    .menu-items:nth-child(4) {
+        margin-top: -40px;
+    }
+    .menu-items:nth-child(6) {
+        margin-top: -20%;
+    }
+}
+
+/* Menu for bigger screens */
+@media screen and (min-width: 400px) {
+    .menu-items {
+        margin-top: 5%;
+    }
+    .menu-items:nth-child(4) {
+        margin-top: -30px;
+    }
+    .menu-items:nth-child(5) {
+        margin-top: 20%;
+    }
+    .menu-items:nth-child(6) {
+        margin-top: -10%;
+    }
 }
 
 /* Menu - floating animation */
@@ -408,7 +445,7 @@ nav {
 #arrow {
     position: fixed;
     bottom: 5px;
-    right: 5px;
+    left: 5px;
     width: 50px;
     height: 50px;
     opacity: 0.6;
@@ -649,9 +686,15 @@ nav {
     z-index: 2;
 }
 
-/* Responsive 
-@media and screen and (max-width: 480px) {
-    body {
-        font-size: 24px;
+/* Responsive */
+@media screen and (min-width: 400px) {
+    #nav {
+        margin-top: 25%;
     }
-} */
+} 
+
+@media screen and (max-width: 480px) {
+    body {
+ 
+    }
+} 

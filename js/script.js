@@ -1,4 +1,19 @@
 //Back to top arrow
+
+//$("#arrow").toggle();
+var arrow = document.getElementById(arrow); 
+$(function() {
+$(window).scroll(function () {
+if($(this).scrollTop() > 200) {
+arrow.style.display = 'block';
+//arrow.fadeIn('slow');
+} else {
+    arrow.style.display = 'none';
+//arrow.fadeOut('slow');
+}
+});
+});
+
 scrollTop('arrow', 500);
 function scrollTop(elem,duration) {
 let target = document.getElementById(elem);
