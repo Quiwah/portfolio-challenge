@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="レイヤー_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 339.4 339.4" style="enable-background:new 0 0 339.4 339.4;" xml:space="preserve">
+<svg version="1.1" id="wa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="339.4px" height="339.4px" viewBox="0 0 339.4 339.4" style="enable-background:new 0 0 339.4 339.4;" xml:space="preserve"
+	>
 <style type="text/css">
 	.st0{opacity:0.92;}
 	.st1{fill:url(#SVGID_1_);}
@@ -13,7 +14,7 @@
 <title>アートボード 1</title>
 <g class="st0">
 	
-		<radialGradient id="SVGID_1_" cx="169.65" cy="35" r="165.13" gradientTransform="matrix(1 0 0 -1 0 184)" gradientUnits="userSpaceOnUse">
+		<radialGradient id="SVGID_1_" cx="169.65" cy="365" r="165.13" gradientTransform="matrix(1 0 0 1 0 -216)" gradientUnits="userSpaceOnUse">
 		<stop  offset="0" style="stop-color:#FFFFFF"/>
 		<stop  offset="1" style="stop-color:#666666"/>
 	</radialGradient>
@@ -22,15 +23,15 @@
 	<path class="st2" d="M292.7,246.9H47.2c-6.6,0-12-5.4-12-12V66.7c0-6.6,5.4-12,12-12h245.4c6.6,0,12,5.4,12,12v168.2
 		c0.1,6.6-5.2,11.9-11.8,12C292.8,246.9,292.7,246.9,292.7,246.9z"/>
 	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="84.7474" y1="581.9164" x2="296.2597" y2="459.795" gradientTransform="matrix(1 0 0 1 0 -257.85)">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="84.7474" y1="-239.9164" x2="296.2597" y2="-117.795" gradientTransform="matrix(1 0 0 -1 0 84.15)">
 		<stop  offset="0.53" style="stop-color:#75B7D1"/>
 		<stop  offset="1" style="stop-color:#75B7D1;stop-opacity:0"/>
 	</linearGradient>
 	<path class="st3" d="M37.1,240.8c53.6-53.6,118-30.3,163.7,21.3c16,18.1,106.9,61.9,121.3-15.4c0,0-2,19.4-2,21.1
 		C334.6,309,243,375,181.5,289.6c-31-43-83.6-108.9-143-46.5C38.5,243.1,36.5,241.5,37.1,240.8z"/>
 </g>
-<path class="st4" d="M200.9,71c-50.9,0,6.6,22.8-121.5,22.8"/>
-<line class="st4" x1="125.8" y1="217.2" x2="125.8" y2="87.4"/>
+<path class="st4" d="M200.9,71C164.5,71,177,87.4,152,91.5c-13,2.1-33.9,2.3-72.6,2.3"/>
+<line class="st4" x1="125.8" y1="217.2" x2="125.8" y2="93.4"/>
 <line class="st4" x1="79.4" y1="123.3" x2="173" y2="123.3"/>
 <path class="st4" d="M162.1,171.4c-21.9-5-24-21-36.3-48.1c-18.2,33.7-22,68.8-49.8,68.8"/>
 <path class="st5" d="M200.9,216.2h-7.1c-8.4,0-15.2-6.8-15.2-15.2l0,0c0-30.5-2.6-49.2-16.6-49.2c13.9,0,16.6-20.5,16.6-49.2
