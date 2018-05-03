@@ -73,6 +73,11 @@ section {
     }
 }
 
+@media screen and (min-width: 401px) {
+
+
+}
+
 #about img {
     margin-bottom: 2em;
     opacity: 0.9;
@@ -365,18 +370,31 @@ nav {
 }
 
 /* Menu for bigger screens */
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 400px) and (max-height: 599px) {
     .menu-items {
         margin-top: 5%;
     }
     .menu-items:nth-child(4) {
         margin-top: -30px;
     }
+    .menu-items:nth-child(6) {
+        margin-top: -20%;
+    }
+}
+
+@media screen and (min-width: 400px) and (min-height: 600px) {
+    .menu-items {
+        margin-top: 10%;
+    }
+    .menu-items:nth-child(4) {
+        margin-top: -30px;
+        margin-left: 5%;
+    }
     .menu-items:nth-child(5) {
-        margin-top: 20%;
+        margin-top: 20px;
     }
     .menu-items:nth-child(6) {
-        margin-top: -10%;
+        margin-top: -5%;
     }
 }
 
