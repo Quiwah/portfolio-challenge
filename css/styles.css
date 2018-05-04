@@ -12,16 +12,17 @@ a {
 }
 
 body {
+    width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background: #d9a7c7;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
+    background: #d9a7c7;
     color: #f3e3ed;
 }
 
 main {
-    width: 100%;
+    max-width: 1000px;
     padding: 0 !important;
 }
 
@@ -33,7 +34,6 @@ main {
 
 h1 {
     color: #6fb27d;
-    font-size: 2.5em;
     padding-top: 1em;
 	text-shadow:0px 2px 0px #535248be,
 				0px 12px 8px #bebca49a,
@@ -60,22 +60,6 @@ section {
 
 #about {
     margin-top: 20%;
-}
-
-/* About and Menu for iPhone X */
-@media screen and (min-height: 650px) and (max-width: 400px) {
-    h1 {
-        padding-top: 5vh;
-        font-size: 4em;
-    }
-    nav {
-        margin-top: 10vh !important;
-    }
-}
-
-@media screen and (min-width: 401px) {
-
-
 }
 
 #about img {
@@ -116,7 +100,6 @@ li {
 #work-items li {
     position: relative;
     height: 100%;
-    width: 100%;
     text-align: center;
 }
 
@@ -147,8 +130,8 @@ li {
 
 .projects:nth-child(1),
 .projects:nth-child(4),
-.projects:nth-child(5) {
-    padding-top: 10%;
+.projects:nth-child(5),
+.projects:nth-child(7) {
     background: white;
 }
 
@@ -160,14 +143,8 @@ li {
     background: #ff7900;
 }
 
-
-#skill-logos li {
-    width: calc((100% - 40px)/2);
-    margin: 0 40px 40px 0;
-}
-
-#skill-logos li:nth-child(even){
-    margin-right: 0;
+.projects:nth-child(6) {
+    background: #ffbecc;
 }
 
 #contact {
@@ -282,7 +259,7 @@ nav {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    padding-top: 5%;
+    padding-top: 17px;
 }
 
 #menu li:hover {
@@ -290,6 +267,7 @@ nav {
 }
 
 #menu a {
+    display: block;
     color: #B28187;
 }
 
@@ -357,45 +335,6 @@ nav {
     -ms-align-self:baseline;
     align-self:baseline;
     animation: float 15s infinite;
-}
-
-/* Menu for small screens */
-@media screen and (max-width: 399px) {
-    .menu-items:nth-child(4) {
-        margin-top: -40px;
-    }
-    .menu-items:nth-child(6) {
-        margin-top: -20%;
-    }
-}
-
-/* Menu for bigger screens */
-@media screen and (min-width: 400px) and (max-height: 599px) {
-    .menu-items {
-        margin-top: 5%;
-    }
-    .menu-items:nth-child(4) {
-        margin-top: -30px;
-    }
-    .menu-items:nth-child(6) {
-        margin-top: -20%;
-    }
-}
-
-@media screen and (min-width: 400px) and (min-height: 600px) {
-    .menu-items {
-        margin-top: 10%;
-    }
-    .menu-items:nth-child(4) {
-        margin-top: -30px;
-        margin-left: 5%;
-    }
-    .menu-items:nth-child(5) {
-        margin-top: 20px;
-    }
-    .menu-items:nth-child(6) {
-        margin-top: -5%;
-    }
 }
 
 /* Menu - floating animation */
@@ -709,10 +648,149 @@ nav {
     #nav {
         margin-top: 25%;
     }
-} 
+}
 
-@media screen and (max-width: 480px) {
-    body {
- 
+@media screen and (max-width: 414px) {
+    h1 {
+        font-size: 2.5em;
     }
-} 
+}
+
+@media screen and (min-width: 415px) {
+    h1 {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .projects:nth-child(1),
+    .projects:nth-child(4),
+    .projects:nth-child(5) {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width: 571px) {
+    #project-items li {
+        width: 48%;
+    }
+
+    .projects:nth-child(odd) {
+        margin-right: 2%;
+}
+}
+
+@media screen and (max-width: 679px) {
+    #skill-logos {
+        flex-direction: column !important;
+        align-items: center;
+        
+    }
+
+    #skill-logos li {
+        width: 100%;
+    }
+
+    #skill-logos img {
+        max-width: 50vw;
+        margin: 2vh auto;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    section {
+        font-size: 20px !important;
+    }
+
+    #skill-logos li {
+        width: calc((85%)/6);
+        margin-right: 3%;
+    }
+
+    #skill-logos li:nth-child(4){
+        margin-top: 3%;
+    }
+    
+    #skill-logos li:nth-child(5){
+        margin-top: 3%;
+    }
+
+    #skill-logos li:nth-child(6){
+        margin-top: 3%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+
+    #work-items li {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    main {
+        width: 1000px;
+    }
+
+    #work-items li {
+        width: 48%;
+    }
+
+    .works:nth-child(odd) {
+        margin-right: 2%;
+    }
+}
+
+/* Title and Menu for iPhone X */
+@media screen and (min-height: 650px) and (max-width: 400px) {
+    h1 {
+        padding-top: 5vh;
+        font-size: 4em;
+    }
+    nav {
+        margin-top: 10vh !important;
+    }
+}
+
+/* Menu for small screens */
+@media screen and (max-width: 399px) {
+    .menu-items:nth-child(4) {
+        margin-top: -40px;
+    }
+    .menu-items:nth-child(6) {
+        margin-top: -20%;
+    }
+}
+
+/* Menu for bigger screens */
+@media screen and (min-width: 400px) and (max-height: 599px) {
+    .menu-items {
+        margin-top: 5%;
+    }
+    .menu-items:nth-child(4) {
+        margin-top: -30px;
+    }
+    .menu-items:nth-child(6) {
+        margin-top: -20%;
+    }
+}
+
+@media screen and (min-width: 400px) and (min-height: 600px) {
+    .menu-items {
+        margin-top: 10%;
+    }
+    .menu-items:nth-child(4) {
+        margin-top: -30px;
+        margin-left: 5%;
+    }
+    .menu-items:nth-child(5) {
+        margin-top: 20px;
+    }
+    .menu-items:nth-child(6) {
+        margin-top: -5%;
+    }
+}
