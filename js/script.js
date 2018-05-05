@@ -2,12 +2,13 @@
 $(function () {
     var topBtn = $('#to-top');
     topBtn.hide();
+    var contentNav = topBtn.offset().top;
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 500) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
+    if ($(this).scrollTop() > 500) && (topBtn.length) {
+        topBtn.fadeIn();
+    } else {
+        topBtn.fadeOut();
+    }
     });
     topBtn.click(function () {
         $('body,html').animate({
