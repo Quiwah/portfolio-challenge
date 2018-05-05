@@ -1,19 +1,15 @@
+//About image animation for bigger screens
+$(window).on('load resize', function(){
+    var w = $(window).width();
+    var x = 680;
+    while (w > x) {
+    $('#me').addClass('animated rubberBand wow');
+    new WOW().init();
+    return false;
+    } 
+  });
+
 //Back to top arrow
-
-//$("#arrow").toggle();
-var arrow = document.getElementById(arrow); 
-$(function() {
-$(window).scroll(function () {
-if($(this).scrollTop() > 200) {
-arrow.style.display = 'block';
-//arrow.fadeIn('slow');
-} else {
-    arrow.style.display = 'none';
-//arrow.fadeOut('slow');
-}
-});
-});
-
 scrollTop('arrow', 500);
 function scrollTop(elem,duration) {
 let target = document.getElementById(elem);
