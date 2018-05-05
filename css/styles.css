@@ -414,6 +414,29 @@ nav {
 }
 
 /* Back to the top arrow */
+#to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80%;
+}
+ 
+#to-top a {
+    display: block;
+    background: #666;
+    color: #fff;
+    width: 100px;
+    padding: 25px 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+ 
+#to-top a:hover {
+    background: #999;
+    text-decoration: none;
+}
+/*
 #arrow {
     position: fixed;
     bottom: 5px;
@@ -433,6 +456,7 @@ nav {
 #arrow:hover {
     background: #fffcdcbb;
 }
+*/
 
 /*
 *Bubbles
@@ -728,6 +752,32 @@ nav {
 }
 
 @media screen and (min-width: 680px) {
+    #about-flex {
+        max-width: 100vw;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        max-height: 100vh;
+    }
+
+    #me {
+        order: 1;
+    }
+
+    #logo {
+        order: 2;
+    }
+
+    #about-text-wrapper {
+        order: 3;
+        width: 55vw;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
     section {
         font-size: 20px !important;
     }
@@ -761,9 +811,21 @@ nav {
     }
 }
 
+@media screen and (min-width: 681px) and (max-width: 1000px) {
+    #about-flex img {
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
 @media screen and (min-width: 1001px) {
     main {
         width: 1000px;
+    }
+
+    #about-flex img {
+        width: 15vw;
+        height: 15vw;
     }
 
     #work-items li {

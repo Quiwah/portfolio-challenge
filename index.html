@@ -40,11 +40,15 @@
         </div>
                     <section id="about">
                         <h2>Hi, I'm Quiwah.</h2>
-                        <img src="img/prof.png" alt="profile image" id="me">
-                        <article id="about-me">
-                            <p>I am teaching Japanese curtural classes on Vashon, WA. I used to work as a web developer in Japan. In January 2018, I was accepted into <em>Grow with Google Challenge Scholarship</em> for Front-End Web Developer track at Udacity. After three months of learning with encouraging peers, I've been awarded the full scholarship for their Nanodegree program! I am feeling fortunate, and trying my best to learn every single thing from this opportunity.</p><p>What <em>Quiwah</em> means? I've been using it as my pen name since I was a child. I chose kanji <em>生和</em> for its sound, which means "<em>Live in harmony</em>". <em>和</em> also means <em>(traditional) Japanese style</em> or <em>Japan</em>. While working on the project 1 of the course, I quickly made a logo with the kanji.</p>
-                        </article>
-                        <img src="img/logo.png" alt="logo">
+                        <div id="about-flex">
+                            <img src="img/prof.png" alt="profile image" id="me" class="me">
+                            <div id="about-text-wrapper">
+                                <article id="about-me">
+                                    <p>I am teaching Japanese curtural classes on Vashon, WA. I used to work as a web developer in Japan. In January 2018, I was accepted into <em>Grow with Google Challenge Scholarship</em> for Front-End Web Developer track at Udacity. After three months of learning with encouraging peers, I've been awarded the full scholarship for their Nanodegree program! I am feeling fortunate, and trying my best to learn every single thing from this opportunity.</p><p>What <em>Quiwah</em> means? I've been using it as my pen name since I was a child. I chose kanji <em>生和</em> for its sound, which means "<em>Live in harmony</em>". <em>和</em> also means <em>(traditional) Japanese style</em> or <em>Japan</em>. While working on the project 1 of the course, I quickly made a logo with the kanji.</p>
+                                </article>
+                             </div>
+                            <img src="img/logo.png" alt="logo" id="logo" class="logo">
+                        </div>
                     </section>
                     <section id="works">
                         <h2>Works</h2>
@@ -168,9 +172,6 @@
                         <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001" target="_blank">Google x Udacity FEND course</a>
                         <p>... and my friends and family &hearts;</p>
                     </section>
-                    <button id="arrow" class="to-top">
-                        <i class="fas fa-angle-up fa-3x"></i>
-                    </button>
                     <div class="bubbles bubble1"></div>
                     <div class="bubbles bubble2"></div>
                     <div class="bubbles bubble3"></div>
@@ -183,11 +184,12 @@
                     <div class="bubbles bubble10"></div>
                 </main>
             </div>
+            <p id="to-top"><a href="#"></a></p>
             <footer></footer>
         <!-- jQuery、Popper.js、Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
         <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/mdb.min.js"></script>
     </body>

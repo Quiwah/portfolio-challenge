@@ -1,4 +1,21 @@
 //Back to top arrow
+$(function () {
+    var topBtn = $('#to-top');
+    topBtn.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
 
 // When the profile image is shown, add classes
 $(window).on('load scroll', function() {
