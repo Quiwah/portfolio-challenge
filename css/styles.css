@@ -70,6 +70,17 @@ section {
     width: 70%;
 }
 
+#me {
+    visibility: hidden;
+    opacity: 0;
+    transition: 1500ms;
+}
+
+#me.show {
+    visibility: visible;
+    opacity: 1;
+}
+
 #about-me {
     width: 100%;
     text-align: left;
@@ -334,10 +345,10 @@ nav {
 /* Menu - Links */
 .menu-items:nth-child(6) {
     margin-left: 65%;
-    -webkit-align-self:baseline;
-    -moz-align-self:baseline;
-    -ms-align-self:baseline;
-    align-self:baseline;
+    -webkit-align-self:flex-start;
+    -moz-align-self:flex-start;
+    -ms-align-self:flex-start;
+    align-self:flex-start;
     animation: float 15s infinite;
 }
 

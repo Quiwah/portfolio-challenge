@@ -1,32 +1,17 @@
-//About image animation for bigger screens
-$(window).on('load resize', function(){
-    var w = $(window).width();
-    var x = 680;
-    while (w > x) {
-    $('#me').addClass('animated rubberBand wow');
-    new WOW().init();
-    return false;
-    } 
-  });
-
 //Back to top arrow
-scrollTop('arrow', 500);
-function scrollTop(elem,duration) {
-let target = document.getElementById(elem);
-target.addEventListener('click', function() {
-let currentY = window.pageYOffset; 
-let step = duration/currentY > 1 ? 10 : 100;
-let timeStep = duration/currentY * step;
-let intervalID = setInterval(scrollUp, timeStep);
-function scrollUp(){
-currentY = window.pageYOffset;
-if(currentY === 0) {
-clearInterval(intervalID);
-} else {
-scrollBy( 0, -step );
-}
-}
+
+// When the profile image is shown, add classes
+$(window).on('load scroll', function() {
+    add_class_in_scrolling($('#me'));
 });
+function add_class_in_scrolling(target) {
+	var winScroll = $(window).scrollTop();
+	var winHeight = $(window).height();
+	var scrollPos = winScroll + winHeight;
+
+	if(target.offset().top < scrollPos) {
+		target.addClass('animated rubberBand show');
+	}
 }
 
 //Contact form
