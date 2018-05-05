@@ -73,7 +73,7 @@ section {
 #me {
     visibility: hidden;
     opacity: 0;
-    transition: 1500ms;
+    /*transition: 1500ms;*/
 }
 
 #me.show {
@@ -813,8 +813,8 @@ nav {
 
 @media screen and (min-width: 681px) and (max-width: 1000px) {
     #about-flex img {
-        width: 20vw;
-        height: 20vw;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -824,8 +824,8 @@ nav {
     }
 
     #about-flex img {
-        width: 15vw;
-        height: 15vw;
+        width: 200px;
+        height: 200px;
     }
 
     #work-items li {
