@@ -1,22 +1,24 @@
 //Back to top arrow
-$(function () {
-    var topBtn = $('#to-top');
-    topBtn.hide();
-    var contentNav = topBtn.offset().top;
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 500) && (topBtn.length) {
-        topBtn.fadeIn();
-    } else {
-        topBtn.fadeOut();
+$(function() {
+    var TopBtn = $('#to-top');    
+    TopBtn.hide();
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+    TopBtn.fadeIn();
+    } 
+    else {
+    TopBtn.fadeOut();
     }
     });
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
+
+    TopBtn.click(function() {
+    $('body,html').animate({
+    scrollTop: 0
+    }, 300);
+    return false;
     });
-});
+    });
 
 // When the profile image is shown, add classes
 $(window).on('load scroll', function() {

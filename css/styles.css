@@ -416,46 +416,53 @@ nav {
 /* Back to the top arrow */
 #to-top {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 80%;
-}
- 
-#to-top a {
+    bottom: -10px;
+    right: 10px;
+    }
+    #to-top a {
     display: block;
-    background: #666;
-    color: #fff;
-    width: 100px;
-    padding: 25px 0;
+    text-decoration: none;
+    color: #b28187;
+    background: #fffcdcbb;
+    opacity: 0.6;
     text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-}
- 
-#to-top a:hover {
-    background: #999;
-    text-decoration: none;
-}
-/*
-#arrow {
-    position: fixed;
-    bottom: 5px;
-    left: 5px;
+    padding-top: 18%;
+    outline: none;
+    }
+    #to-top a:hover {
+    text-decoration: none; 
+    background: transparent;
+    }
+
+    @media (min-width: 768px) {
+    #to-top a {
     width: 50px;
     height: 50px;
-    opacity: 0.6;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
+    }
+    }
+
+    @media (max-width: 767px) {
+    #to-top a {
+    width: 20px;
+    height: 20px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    }
+    }
+/*
+#arrow {
+    bottom: 5px;
+    left: 5px;
+
     border: 0;
-    color: #b28187;
-    background: transparent;
+
     z-index: 100;
 }
 
-#arrow:hover {
-    background: #fffcdcbb;
-}
 */
 
 /*
