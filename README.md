@@ -1,5 +1,5 @@
 # Portfolio site  
-This is a "Personal Project" for Cascading Coder’s 7th Creative Code Challenge.  
+This is a "Personal Portfolio" for Cascading Coder’s 7th Creative Code Challenge.  
 
 <img src="https://github.com/Quiwah/build-a-portfolio-site/blob/master/images/2018Logo.png" alt="Cascading Coders" width="30%">  
 
@@ -13,3 +13,5 @@ This is a "Personal Project" for Cascading Coder’s 7th Creative Code Challenge
 >[Twitter](https://twitter.com/cascadingcoders)  
 >[Instagram](https://www.instagram.com/cascadingcoders/)  
 >[Facebook Page](https://www.facebook.com/CascadingCoders/)
+
+### Looks like it's not working for iPads! I'll fix that.
