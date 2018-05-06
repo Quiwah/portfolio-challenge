@@ -18,13 +18,13 @@ $(function() {
     }, 300);
     return false;
     });
-    });
+});
 
 // When a navi is hovered, add classes
-$(".menu-items").mouseover(function () {
+$('.menu-items').mouseover(function () {
     $(this).addClass('animated bounce');
 });
-$(".menu-items").mouseleave(function () {
+$('.menu-items').mouseleave(function () {
     $(this).removeClass('animated bounce');
 });
 
