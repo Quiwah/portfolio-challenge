@@ -1,9 +1,9 @@
 <?php
 $webmaster_email = "quiwah@gmail.com";
 
-$contact_form = "index.html#contact";
-$error_page = "error.html";
-$thankyou_page = "thank_you.html";
+$contact_form = "../index.html#contact";
+$error_page = "../error.html";
+$thankyou_page = "../thank_you.html";
 
 $email = $_REQUEST['email'] ;
 $message = $_REQUEST['message'] ;
