@@ -20,6 +20,14 @@ $(function() {
     });
     });
 
+// When a navi is hovered, add classes
+$(".menu-items").mouseover(function () {
+    $(this).addClass('animated bounce');
+});
+$(".menu-items").mouseleave(function () {
+    $(this).removeClass('animated bounce');
+});
+
 // When the profile image is shown, add classes
 $(window).on('load scroll', function() {
     add_class_in_scrolling($('#me'));

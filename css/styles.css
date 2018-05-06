@@ -73,7 +73,6 @@ section {
 #me {
     visibility: hidden;
     opacity: 0;
-    /*transition: 1500ms;*/
 }
 
 #me.show {
@@ -263,18 +262,11 @@ nav {
     padding: 0;
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
 }
 
 .menu-items {
     background: #ffd1d7;
     transition: transform .2s;
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-    padding-top: 17px;
 }
 
 .menu-items:hover {
@@ -289,67 +281,6 @@ nav {
 #menu a:hover {
     color: #B28187;
     text-decoration: none;
-}
-
-/* Menu - About */
-.menu-items:nth-child(1) {
-    margin-left: 5%;
-    -webkit-align-self:flex-start;
-    -moz-align-self:flex-start;
-    -ms-align-self:flex-start;
-    align-self:flex-start;
-    animation: float 16s infinite;
-}
- 
-/* Menu - Works */
-.menu-items:nth-child(2) {
-    margin-right: 5%;
-    margin-top: -60px;
-    -webkit-align-self:flex-end;
-    -moz-align-self:flex-end;
-    -ms-align-self:flex-end;
-    align-self:flex-end;
-    animation: float2 15s infinite;
-}
- 
-/* Menu - Skills */
-.menu-items:nth-child(3) {
-    margin-left: 20%;
-    -webkit-align-self:center;
-    -moz-align-self:center;
-    -ms-align-self:center;
-    align-self:center;
-    animation: float3 15s infinite;
-}
- 
-/* Menu - Contact */
-.menu-items:nth-child(4) {
-    margin-left: 3%;
-    -webkit-align-self:baseline;
-    -moz-align-self:baseline;
-    -ms-align-self:baseline;
-    align-self:baseline;
-    animation: float2 15s infinite;
-}
-
-/* Menu - Projects */
-.menu-items:nth-child(5) {
-    margin-left: 30%;
-    -webkit-align-self:baseline;
-    -moz-align-self:baseline;
-    -ms-align-self:baseline;
-    align-self:baseline;
-    animation: float5 16s infinite;
-}
-
-/* Menu - Links */
-.menu-items:nth-child(6) {
-    margin-left: 65%;
-    -webkit-align-self:flex-start;
-    -moz-align-self:flex-start;
-    -ms-align-self:flex-start;
-    align-self:flex-start;
-    animation: float 15s infinite;
 }
 
 /* Menu - floating animation */
@@ -453,17 +384,6 @@ nav {
     border-radius: 10px;
     }
     }
-/*
-#arrow {
-    bottom: 5px;
-    left: 5px;
-
-    border: 0;
-
-    z-index: 100;
-}
-
-*/
 
 /*
 *Bubbles
@@ -701,12 +621,134 @@ nav {
     h1 {
         font-size: 2.5em;
     }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    .menu-items {
+        width: 100px;
+        height: 100px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        padding-top: 17px;
+    }
+
+    /* Menu - About */
+    .menu-items:nth-child(1) {
+        margin-left: 5%;
+        -webkit-align-self:flex-start;
+        -moz-align-self:flex-start;
+        -ms-align-self:flex-start;
+        align-self:flex-start;
+        animation: float 16s infinite;
+    }
+    
+    /* Menu - Works */
+    .menu-items:nth-child(2) {
+        margin-right: 5%;
+        margin-top: -60px;
+        -webkit-align-self:flex-end;
+        -moz-align-self:flex-end;
+        -ms-align-self:flex-end;
+        align-self:flex-end;
+        animation: float2 15s infinite;
+    }
+    
+    /* Menu - Skills */
+    .menu-items:nth-child(3) {
+        margin-left: 20%;
+        -webkit-align-self:center;
+        -moz-align-self:center;
+        -ms-align-self:center;
+        align-self:center;
+        animation: float3 15s infinite;
+    }
+    
+    /* Menu - Contact */
+    .menu-items:nth-child(4) {
+        margin-left: 3%;
+        -webkit-align-self:baseline;
+        -moz-align-self:baseline;
+        -ms-align-self:baseline;
+        align-self:baseline;
+        animation: float2 15s infinite;
+    }
+
+    /* Menu - Projects */
+    .menu-items:nth-child(5) {
+        margin-left: 30%;
+        -webkit-align-self:baseline;
+        -moz-align-self:baseline;
+        -ms-align-self:baseline;
+        align-self:baseline;
+        animation: float5 16s infinite;
+    }
+
+    /* Menu - Links */
+    .menu-items:nth-child(6) {
+        margin-left: 65%;
+        -webkit-align-self:flex-start;
+        -moz-align-self:flex-start;
+        -ms-align-self:flex-start;
+        align-self:flex-start;
+        animation: float 15s infinite;
+    }
+
 }
 
 @media screen and (min-width: 415px) {
     h1 {
         font-size: 5em;
     }
+
+    .menu-items {
+        width: 200px;
+        height: 100px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        padding-top: 17px;
+    }
+
+    /* Menu - About */
+    .menu-items {
+        -webkit-align-self: baseline;
+        -moz-align-self: baseline;
+        -ms-align-self: baseline;
+        align-self: baseline;
+    }
+
+    .menu-items:nth-child(1) {
+        animation: float 16s infinite;
+    }
+    
+    /* Menu - Works */
+    .menu-items:nth-child(2) {
+        animation: float2 15s infinite;
+    }
+    
+    /* Menu - Skills */
+    .menu-items:nth-child(3) {
+        animation: float3 15s infinite;
+    }
+    
+    /* Menu - Contact */
+    .menu-items:nth-child(4) {
+        animation: float2 15s infinite;
+    }
+
+    /* Menu - Projects */
+    .menu-items:nth-child(5) {
+        animation: float5 16s infinite;
+    }
+
+    /* Menu - Links */
+    .menu-items:nth-child(6) {
+        animation: float 15s infinite;
+    }
+
 }
 
 @media screen and (max-width: 570px) {
@@ -884,7 +926,6 @@ nav {
     }
     .menu-items:nth-child(4) {
         margin-top: -30px;
-        margin-left: 5%;
     }
     .menu-items:nth-child(5) {
         margin-top: 20px;
